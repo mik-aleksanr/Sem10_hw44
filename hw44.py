@@ -26,4 +26,4 @@ cod_df = pd.DataFrame(coder.fit_transform(data[['whoAmI']]).toarray())  # вып
 # для столбца
 print(data.join(cod_df))  # это для наглядности первоначальный столбец и кодированный
 cod_df.columns = ['human', 'robot']  # добавляем название столбцов по названиям категориальных переменных
-print(cod_df)  # результат
+print(cod_df)
